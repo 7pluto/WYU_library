@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/et_1"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"
+        android:textColor="#ffad33"
+        android:hint="用户名"
+        android:background="@drawable/bg_username"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/icon_user"
+        android:maxLines="1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/et_2"
+        android:textSize="20sp"
+        android:textColor="#ffad33"
+        android:inputType="textWebPassword"
+        android:hint="密码"
+        android:background="@drawable/bg_username"
+        android:drawableLeft="@drawable/icon_password"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/et_1"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"/>
+
+    <CheckBox
+        android:id="@+id/cb_remember_psd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_2"
+        android:layout_marginTop="5dp"
+        android:text="记住账号"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/btn_login"
+        android:layout_below="@id/et_2"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_btn4"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
